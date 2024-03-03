@@ -8,6 +8,7 @@ from selenium.webdriver import ActionChains
 # создание окна, переход к сайту Яндекс
 driver = webdriver.Chrome()
 driver.get("https://ya.ru/")
+
 # ввод в поле инпута текста "котики"
 driver.find_element(By.CSS_SELECTOR, "#text").send_keys("котики")
 
